@@ -35,6 +35,7 @@ CORE_IMAGE_BASE_INSTALL += " \
     weston-init \
     ${@bb.utils.contains("MACHINE_FEATURES", "optee", "optee-test optee-client", "", d)} \
     ${@bb.utils.contains("MACHINE_FEATURES", "mali450", "mali450-userland", "", d)} \
+    adwaita-icon-theme-symbolic \
 "
 
 EXTRA_USERS_PARAMS = "\
